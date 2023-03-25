@@ -18,3 +18,5 @@ sudo DEBIAN_FRONTEND=noninteractive \
 sudo bash -c 'echo "exec /etc/X11/Xsession /usr/bin/xfce4-session" > /etc/chrome-remote-desktop-session'
 
 sudo systemctl disable lightdm.service
+
+sudo apt install gnome-system-monitor -y
