@@ -1,0 +1,13 @@
+## apt update
+sudo apt update
+
+## install XRDP
+sudo apt install xrdp
+
+## start XRDP service
+sudo service xrdp start
+sudo service xrdp-sesman start
+
+## check the xrdp status
+sudo update-rc.d xrdp enable     
+sudo service xrdp status
