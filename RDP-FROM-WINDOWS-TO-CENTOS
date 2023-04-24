@@ -1,0 +1,18 @@
+## INSTALL EPEL RELEASE
+yum -y install epel-release
+
+## INSTALL XRDP
+yum -y install xrdp tigervnc-server
+
+## START THE XRDP SERVICE
+
+systemctl start xrdp.service
+
+## ENABLE XRDP SERVICE
+systemctl enable xrdp.service
+
+## OPEN THE RDP PORT 3389
+firewall-cmd --permanent --zone=public --add-port=3389/tcp
+
+## RELOAD THE FIREWALL IN THE CENTOS
+firewall-cmd --reload
