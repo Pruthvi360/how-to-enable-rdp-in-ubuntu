@@ -1,0 +1,19 @@
+## apt update
+
+sudo apt update
+
+## Install XRDP
+
+sudo apt install xrdp -y
+
+## ENABLE XRDP ON UBUNTU
+
+sudo systemctl enable xrdp
+
+## OPEN PORT FOR RDP 3389
+
+sudo ufw allow from any to port 3389 proto tcp
+
+## IP ADDRESS
+
+ip address
